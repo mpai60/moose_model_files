@@ -19,7 +19,7 @@ For this initial work, the best way to run it is to install MOOSE and then inser
 
 Once everything is installed, these are the steps to run it. I have included a mesh file and an Euler angle file, so if you're running with these, you can start at step 5. The first 4 steps are for running with new geometries and Euler angles configurations.  
 
-I've also added a schematic image of the workflow to show where all of these steps fit in.
+I've also added a schematic image of the workflow to show where all of these steps fit in. It is directly below the steps.
 
 1. Generate the periodic tessellation in Neper.
 2. Run neper mosaic to make the periodic tessellation rectilinear.
@@ -28,7 +28,10 @@ I've also added a schematic image of the workflow to show where all of these ste
 5. Run pair_boundaries.py with the meshonly_in.e file. This will require the python library exodusii: https://github.com/sandialabs/exodusii
 6. The output for pair_boundaries.py needs to be used as an input for the MOOSE run. It can be written into a variable in bash or something similar.
 7. Similarly, generate a bash variable that lists all the block IDs in the model. This can be done with exodusii the same as pair_boundaries.
-8. Run the final MOOSE simulation, with the meshed input file, Euler angle file, pair_boundaries, and block IDs as inputs. This will generate an exodus file for visualization and a .csv file with postprocessor outputs.
+8. Run the final MOOSE simulation, with the mesh, input file (binder.i), Euler angle file, pair_boundaries, and block IDs as inputs. This will generate an exodus file for visualization and a .csv file with postprocessor outputs.
+
+
+<img width="1157" height="641" alt="workflow_schematic" src="https://github.com/user-attachments/assets/884c3465-ef47-46a2-baf2-a82779bfc45a" />
 
 ***
 
