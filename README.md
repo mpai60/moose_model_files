@@ -17,7 +17,9 @@ For this initial work, the best way to run it is to install MOOSE and then inser
 
 ***
 
-Once everything is installed, these are the steps to run it. I have included a mesh file and an Euler angle file, so if you're running with these, you can start at step 5. The first 4 steps are for running with new geometries and Euler angles configurations.
+Once everything is installed, these are the steps to run it. I have included a mesh file and an Euler angle file, so if you're running with these, you can start at step 5. The first 4 steps are for running with new geometries and Euler angles configurations.  
+
+I've also added a schematic image of the workflow to show where all of these steps fit in.
 
 1. Generate the periodic tessellation in Neper.
 2. Run neper mosaic to make the periodic tessellation rectilinear.
