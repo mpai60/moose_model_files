@@ -1,0 +1,2 @@
+neper -T -domain "square(22.5,45)" -dim 2 -morpho "diameq:lognormal(0.08,0.01),1-sphericity:lognormal(0.1,0.03)" -n from_morpho -o micro
+neper -V micro.tess -datacellcol white -dataedgecol "20:180:20" -dataedgerad 0.07 -print img
