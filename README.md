@@ -7,7 +7,7 @@ For this initial work, the best way to run it is to install MOOSE and then inser
 
 1. Install MOOSE: https://mooseframework.inl.gov/getting_started/installation/
 2. Once that is running, these are the custom functions. For each directory, the header goes in the /include and the source file in /src.
-3. Under /moose/modules/solid_mechanics/[src or header]/materials
+3. Under /moose/modules/solid_mechanics/[src or header]/materials  
    a. ComputeRotatedEigenstrain
    b. GraphiteIrradiationCreepEigestrain
 
