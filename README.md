@@ -13,6 +13,7 @@ For this initial work, the best way to run it is to install MOOSE and then inser
 
 4. Under /moose/modules/solid_mechanics/[src or header]/materials/crystal_plasticity, add ComputeVariableOrthotropicElasticityTensorCP.
 5. Under /moose/framework/[src or include]/postprocessors, add InterfaceFailedFractionPP.
+   (A note about this function: I think I need a better way to define a "fully open" CZM, so this function is still subject to change.)
 
 ***
 
